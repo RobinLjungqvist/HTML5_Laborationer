@@ -99,6 +99,7 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="styles\myStyle.css" />
     <Content Include="Video\MrBean.ogv" />
     <Content Include="Video\MrBean.webm" />
     <None Include="Web.Debug.config">
