@@ -1,0 +1,138 @@
+﻿<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <title>Order</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="A webpage about guitar and other stuff">
+    <meta name="keywords" content="Guitar,MrBean,Music">
+    <meta name="author" content="Robin Ljungqvist">
+</head>
+<body >
+    <header>
+        <h1>Order</h1>
+        <nav>
+            <ul>
+                <li><a href="../Webpages/Guitars.html">Back</a></li>
+            </ul>
+        </nav>
+    </header>
+    <fieldset>
+        <legend>Order form</legend>
+        <form action="">
+            <fieldset>
+                <legend>User Info</legend>
+                    <table>
+                        <tr>
+                            <td>
+                                <label for="username">User Name:</label>
+                            </td>
+                            <td>
+                                <input type="text" name="username" required />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="email">E-mail:</label>
+                            </td>
+                            <td>
+                                <input type="email" name="email" required />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="password">Password:</label>
+                            </td>
+                            <td>
+                                <input type="password" name="password" required />
+                            </td>
+                        </tr>
+                    </table>
+            </fieldset>
+            <fieldset>
+                <legend>Delivery Adress</legend>
+                <table>
+                    <tr>
+                        <td>
+                            <label for="fullname">Full Name:</label>
+                        </td>
+                        <td>
+                            <input type="text" name="fullname" required />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="street">Street Adress:</label>
+                        </td>
+                        <td>
+                            <input type="text" name="street" required />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="zipcode">Zipcode:</label>
+                        </td>
+                        <td>
+                            <input type="number" name="zipcode" size="5" min="10000" max="99999" required />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="phone">Tel:</label>
+                        </td>
+                        <td>
+                            <input type="tel" name="phone" required />
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+            <fieldset>
+                <legend>Payment Adress</legend>
+                <table>
+                    <tr>
+                        <td>
+                            <label for="payfullname">Full Name:</label>
+                        </td>
+                        <td>
+                            <input type="text" name="payfullname" required />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="paystreet">Street Adress:</label>
+                        </td>
+                        <td>
+                            <input type="text" name="paystreet" required />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="payzipcode">Zipcode:</label>
+                        </td>
+                        <td>
+                            <input type="number" name="payzipcode" size="5" min="10000" max="99999" required />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="payphone">Tel:</label>
+                        </td>
+                        <td>
+                            <input type="tel" name="payphone" required />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="projectnr">Project Number:</label>
+                        </td>
+                        <td>
+                            <input type="number" name="projectnr" required />
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+
+            <input type="submit" name="submit" value="Submit" />
+    </form>
+</fieldset>
+</body>
+</html>

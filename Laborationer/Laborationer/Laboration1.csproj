@@ -129,6 +129,7 @@
     <Content Include="Webpages\Guitars.html" />
     <Content Include="Webpages\HtmlTagsInfo.html" />
     <Content Include="Index.html" />
+    <Content Include="Webpages\order.html" />
     <Content Include="Webpages\Video.html" />
     <Content Include="Webpages\VisualAudio.html" />
   </ItemGroup>
