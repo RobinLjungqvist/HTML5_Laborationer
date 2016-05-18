@@ -94,7 +94,13 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Images\GuitarsForSale\ChapmanML-2.PNG" />
+    <Content Include="Images\GuitarsForSale\ChroneGuitarNormandy.PNG" />
     <Content Include="Images\Figcapdefinition.PNG" />
+    <Content Include="Images\GuitarsForSale\Silvertone.PNG" />
+    <Content Include="Images\GuitarsForSale\Suhr.PNG" />
+    <Content Include="Images\GuitarsForSale\Surfersparadise.PNG" />
+    <Content Include="Images\GuitarsForSale\Washburn.PNG" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -120,6 +126,7 @@
     <Content Include="Video\MrBean.mp4" />
     <Content Include="Web.config" />
     <Content Include="Webpages\Audio.html" />
+    <Content Include="Webpages\Guitars.html" />
     <Content Include="Webpages\HtmlTagsInfo.html" />
     <Content Include="Index.html" />
     <Content Include="Webpages\Video.html" />
