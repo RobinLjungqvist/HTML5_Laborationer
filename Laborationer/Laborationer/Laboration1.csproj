@@ -130,6 +130,7 @@
     <Content Include="Webpages\htmltaginfo.html" />
     <Content Include="index.html" />
     <Content Include="Webpages\order.html" />
+    <Content Include="Webpages\receipt.html" />
     <Content Include="Webpages\video.html" />
     <Content Include="Webpages\visualaudio.html" />
   </ItemGroup>
