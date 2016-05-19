@@ -125,13 +125,13 @@
     <Content Include="scripts\ai.0.15.0-build58334.min.js" />
     <Content Include="Video\MrBean.mp4" />
     <Content Include="Web.config" />
-    <Content Include="Webpages\Audio.html" />
-    <Content Include="Webpages\Guitars.html" />
-    <Content Include="Webpages\HtmlTagsInfo.html" />
-    <Content Include="Index.html" />
+    <Content Include="Webpages\audio.html" />
+    <Content Include="Webpages\guitars.html" />
+    <Content Include="Webpages\htmltaginfo.html" />
+    <Content Include="index.html" />
     <Content Include="Webpages\order.html" />
-    <Content Include="Webpages\Video.html" />
-    <Content Include="Webpages\VisualAudio.html" />
+    <Content Include="Webpages\video.html" />
+    <Content Include="Webpages\visualaudio.html" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
