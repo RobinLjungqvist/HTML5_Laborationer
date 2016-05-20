@@ -129,6 +129,7 @@
     <Content Include="Webpages\guitars.html" />
     <Content Include="Webpages\htmltaginfo.html" />
     <Content Include="index.html" />
+    <Content Include="Webpages\learnaboutinput\five.html" />
     <Content Include="Webpages\learnaboutinput\four.html" />
     <Content Include="Webpages\learnaboutinput\menu.html" />
     <Content Include="Webpages\learnaboutinput\one.html" />
