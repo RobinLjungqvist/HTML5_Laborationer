@@ -24,8 +24,8 @@
             <legend>Form</legend>
             <div>
                 <p>
-                    <label for="firstname">First Name:</label><input type="text" name="firstname" placeholder="Ex. Olle.." required /><br />
-                    <label for="lastname">Lastname Name:</label><input type="text" name="lastname" placeholder="Ex. Svensson..." required />
+                    <label for="fname">First Name:</label><input type="text" id="fname" name="firstname" placeholder="Ex. Olle.." required /><br />
+                    <label for="lname">Lastname Name:</label><input type="text" id="lname" name="lastname" placeholder="Ex. Svensson..." required />
                 </p>
             </div>
             <div>
@@ -64,9 +64,9 @@
             </div>
             <div>
                 <p>
-                    <label for="potatoes">How many potatoes per sitting?</label> <br />
+                    <label for="potatoe">How many potatoes per sitting?</label> <br />
                     <input id="potatoe" name="potatoe" type="range" min="5" max="9000" value="5" onchange="printValue('potatoe','potatoedisplay')" /> <br />
-                    <input id="potatoedisplay" type="text" min="5" max="9000" oninput="updateslider('potatoe','potatoedisplay')" />
+                    <input id="potatoedisplay" type="number" min="5" max="9000" oninput="updateslider('potatoe','potatoedisplay')" />
                 </p>
             </div>
             <input type="submit" name="Submit" />
