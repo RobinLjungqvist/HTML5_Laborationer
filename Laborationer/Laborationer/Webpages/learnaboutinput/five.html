@@ -31,38 +31,42 @@
             <div>
                 <p>
                     <label for="kids">How many kids do you have?</label> <br />
+                    <label> 0 - 20 </label> <br />
                     <input id="kids" name="kids" type="range" min="0" max="20" value="0" onchange="printValue('kids','kidsdisplay')" /> <br />
-                    <input id="kidsdisplay" type="text" readonly /><br />
-                    <label for="over20kids">More than 20</label> <input type="checkbox" /> <br />
+                    <input id="kidsdisplay" type="number" min="0" max="20" oninput="updateslider('kids','kidsdisplay')" /><br />
+                    <label for="over20kids">More than 20</label> <input id="over20kids" name="over20kids" type="checkbox" onchange="checkdisable(over20kids,kids)" /> <br />
                 </p>
             </div>
             <div>
                 <p>
                     <label for="age">How old are you?</label> <br />
+                    <label> 10 - 150 </label> <br />
                     <input id="age" name="age" type="range" min="10" max="150" value="10" onchange="printValue('age','agedisplay')"/> <br />
-                    <input id="agedisplay" type="text" readonly />
+                    <input id="agedisplay" type="number" min="10" max="150" oninput="updateslider('age','agedisplay')" />
 
                 </p>
             </div>
             <div>
                 <p>
                     <label for="spend">How much do you spend on food each week?</label> <br />
+                    <small> 100 - 100000 </small> <br />
                     <input id="spend" type="range" min="100" max="100000"  step="100" value="100" onchange="printValue('spend','spenddisplay')" /> <br />
-                    <input id="spenddisplay" type="text" readonly />
+                    <input id="spenddisplay" type="number" min="100" max="100000" step="100" oninput="updateslider('spend','spenddisplay')" />
                 </p>
             </div>
             <div>
                 <p>
                     <label for="dance">How many hours do you dance every day?</label> <br />
+                    <label> 0 - 24 </label> <br />
                     <input id="dance" name="dance" type="range" min="0" max="24" value="0" onchange="printValue('dance','dancedisplay')" /> <br />
-                    <input id="dancedisplay" type="text"  readonly />
+                    <input id="dancedisplay" type="number"  min="0" max="24" oninput="updateslider('dance','dancedisplay')" />
                 </p>
             </div>
             <div>
                 <p>
                     <label for="potatoes">How many potatoes per sitting?</label> <br />
                     <input id="potatoe" name="potatoe" type="range" min="5" max="9000" value="5" onchange="printValue('potatoe','potatoedisplay')" /> <br />
-                    <input id="potatoedisplay" type="text"  readonly />
+                    <input id="potatoedisplay" type="text" min="5" max="9000" oninput="updateslider('potatoe','potatoedisplay')" />
                 </p>
             </div>
             <input type="submit" name="Submit" />
@@ -74,6 +78,21 @@
         var x = document.getElementById(textbox);
         var y = document.getElementById(sliderID);
         x.value = y.value;
+    }
+    function updateslider(sliderID, textbox) {
+        var x = document.getElementById(textbox);
+        var y = document.getElementById(sliderID);
+        y.value = x.value;
+    }
+    function checkdisable(checkbox, sliderID) {
+        if(checkbox.checked === true)
+        {
+            sliderID.disabled = true;
+        }
+        else
+        {
+            sliderID.disabled = false;
+        }
     }
 
     window.onload = function () {
