@@ -92,7 +92,7 @@ html, body {
     padding: 1%;
     box-shadow: rgba(23, 22, 22, 0.52) 5px 5px;
 }
-
+s
 #left {
     float: left;
     margin-left: 2.5%;
@@ -135,7 +135,18 @@ article p {
 #whatviewport:before {
     content: "Hello Computer Screen";
 }
+/* --- Tablet ---*/
+@media only screen and (max-width: 768px) {
 
+    .contentCont {
+        background-color: #ae7247;
+    }
+
+    #whatviewport:before {
+        content: "Hello Tablet Screen";
+    }
+}
+/* --- Mobile ---*/
 @media only screen and (max-width: 480px) {
     .header {
         position: fixed;
@@ -167,16 +178,16 @@ article p {
 
     #right {
         float: left;
-        margin-left: 2.5%;
+        margin-left: 1.5%;
     }
 
     #whatviewport:before {
         content: "Hello Mobile Screen";
     }
-
-    @media print {
-        html {
-            display: none;
-        }
+}
+/* --- Print ---*/
+@media print {
+    html {
+        display: none;
     }
 }
