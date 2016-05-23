@@ -91,6 +91,7 @@ html, body {
     padding: 1%;
     box-shadow: rgba(23, 22, 22, 0.52) 5px 5px;
 }
+
 #left {
     float: left;
     margin-left: 2.5%;
@@ -134,13 +135,30 @@ article p {
     font-size: 32px;
     content: "Hello Computer Screen";
 }
+
+img {
+    width: 100%;
+    height: auto;
+    margin: 5px auto;
+}
 /* --- Tablet ---*/
 @media only screen and (max-width: 768px) {
     .header {
         position: absolute;
     }
+
     .contentCont {
+        width: 94%;
         background-color: #ae7247;
+    }
+
+    #left {
+        margin-left: 1.5%;
+    }
+
+    #right {
+        float: left;
+        margin-left: 1.5%;
     }
 
     #whatviewport:before {
@@ -177,9 +195,10 @@ article p {
         background-color: #a4bd6f;
     }
 
-    #left{
+    #left {
         margin-left: 1.5%;
     }
+
     #right {
         float: left;
         margin-left: 1.5%;
