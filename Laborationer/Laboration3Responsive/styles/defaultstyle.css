@@ -31,7 +31,6 @@ html, body {
         color: #ffffff;
         line-height: 1;
         text-align: center;
-        margin-top: 0 auto;
         padding: 0;
         text-shadow: 5px 5px 5px #1b1a1a;
     }
@@ -92,7 +91,6 @@ html, body {
     padding: 1%;
     box-shadow: rgba(23, 22, 22, 0.52) 5px 5px;
 }
-s
 #left {
     float: left;
     margin-left: 2.5%;
@@ -133,11 +131,14 @@ article p {
     }
 
 #whatviewport:before {
+    font-size: 32px;
     content: "Hello Computer Screen";
 }
 /* --- Tablet ---*/
 @media only screen and (max-width: 768px) {
-
+    .header {
+        position: absolute;
+    }
     .contentCont {
         background-color: #ae7247;
     }
@@ -149,7 +150,7 @@ article p {
 /* --- Mobile ---*/
 @media only screen and (max-width: 480px) {
     .header {
-        position: fixed;
+        position: absolute;
     }
 
         .header nav {
@@ -176,6 +177,9 @@ article p {
         background-color: #a4bd6f;
     }
 
+    #left{
+        margin-left: 1.5%;
+    }
     #right {
         float: left;
         margin-left: 1.5%;

@@ -106,18 +106,20 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="images\flygplan1.PNG" />
+    <Content Include="images\flygplan2.PNG" />
+    <Content Include="images\flygplan3.PNG" />
     <Content Include="scripts\ai.0.15.0-build58334.js" />
     <Content Include="scripts\ai.0.15.0-build58334.min.js" />
     <Content Include="styles\defaultstyle.css" />
     <Content Include="Web.config" />
     <Content Include="index.html" />
+    <Content Include="webpages\aboutCSS.html" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="webpages\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
