@@ -26,54 +26,68 @@
         }
 
         .header {
-            position:fixed;
+            position: fixed;
             font-family: Arial;
             background-color: #808080;
             width: 100%;
-            max-width:960px;
+            max-width: 960px;
+            min-width: 240px;
             height: auto;
             border-bottom-left-radius: 5px;
             border-bottom-right-radius: 5px;
+            padding: 0;
+            clear: right;
         }
 
-        .header h1 {
-            float: left;
-            color: #ffffff;
-            line-height: 1;
-            margin-top: 0 auto;
-            margin-left: 20px;
-            text-shadow: 5px 5px 5px #1b1a1a;
-        }
-
-        .header nav {
-            text-align: center;
-            width: 70%;
-            float: right;
-            background-color: #2b2525;
-        }
-
-            .header nav ul {
-                margin-left: 7%;
-                list-style: none;
-                padding: 0;
-            }
-
-            .header nav li a:link, nav li a:visited {
-                text-decoration: none;
+            .header h1 {
                 float: left;
                 color: #ffffff;
-                padding: 10px;
-                display: block;
+                line-height: 1;
+                margin-top: 0 auto;
+                margin-left: 10%;
+                padding: 0;
+                text-shadow: 5px 5px 5px #1b1a1a;
             }
+
+            .header nav {
+                float: left;
+                text-align: center;
+                width: 100%;
+                margin: 0 auto;
+                background-color: #2b2525;
+                border-radius: 5px;
+                clear: both;
+            }
+
+                .header nav ul {
+                    list-style: none;
+                    padding: 0;
+                }
+
+                .header nav li {
+                    display: inline-block;
+                    min-width: 140px;
+                    margin: 5px auto;
+                }
+
+                    .header nav li a:link, nav li a:visited {
+                        text-decoration: none;
+                        color: #ffffff;
+                        display: inline-block;
+                    }
+
+        .content {
+            margin-top: 6%;
+            float: left;
+        }
 
         .contentCont {
             float: left;
             background-color: #cfc0a1;
             border: 1px solid black;
             border-radius: 10px;
-            max-width: 440px;
-            min-width: 440px;
-            margin: 10px;
+            width: 46%;
+            margin: auto 1%;
             margin-top: 10%;
             padding: 8px;
             box-shadow: rgba(23, 22, 22, 0.52) 5px 5px;
@@ -88,17 +102,19 @@
                 font-weight: bold;
             }
 
-        .Footer {
-            background-color: #493f2b;
+        .Footer p {
+            background-color: #808080;
             border-top-left-radius: 3px;
             border-top-right-radius: 3px;
-            color: #e1d0a8;
+            color: #ffffff;
             position: relative;
-            margin-top: -30px; /* negative value of footer height */
             height: 30px;
             clear: both;
-            text-align: right;
-            padding-right: 1%;
+            text-align: center;
+            bottom: 0;
+            border-top: 1px solid black;
+            margin: 0 auto;
+            padding: 1%;
         }
 
         #whatviewport:before {
@@ -120,9 +136,8 @@
                     <li><a href="#">Iphone</a></li>
                 </ul>
             </nav>
-
         </div>
-        <div class="Content">
+        <div class="content">
             <div id="left" class="contentCont">
                 <article>
                     <h2 id="whatviewport"></h2>
@@ -137,32 +152,33 @@
                     </p>
                 </article>
             </div>
-        </div>
-        <div id="right" class="contentCont">
-            <article>
-                <p>
 
-                    Nullam pharetra, felis sit amet suscipit commodo, purus sem auctor metus, eu molestie mi risus varius odio. Quisque eget lacinia sem. Proin nec sollicitudin odio. Proin eget euismod eros. Maecenas vestibulum, turpis nec mattis pellentesque, massa elit aliquam libero, nec luctus mi elit vitae nisi. Nunc posuere gravida ex quis vehicula. Aenean aliquam, ipsum ut cursus porta, leo ipsum scelerisque mauris, in hendrerit mauris eros sed nunc. Duis ex purus, tristique nec est ac, aliquam porta dui.
-                </p>
-                <p>
-                    Aenean eu blandit leo, non posuere ante. Sed aliquet non enim a tempor. Vivamus vitae leo ac neque aliquet interdum. Aenean vitae felis tempus, consequat mauris at, placerat nibh. Duis at euismod est. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed rutrum vel felis eu iaculis. Quisque accumsan sagittis turpis, eu fermentum lectus consequat ut. Proin suscipit egestas sem ac aliquam.
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dignissim rhoncus orci, sit amet mollis dui. Suspendisse viverra arcu vel quam aliquam consectetur. Phasellus placerat libero nulla, et sagittis felis tristique id. Sed pulvinar quam eu ligula tempus viverra. Nam ac aliquam mauris. Maecenas nunc dui, interdum vel fermentum non, posuere vestibulum dui. Cras orci nunc, iaculis quis vulputate in, suscipit vel nulla. Duis vitae quam vitae augue dignissim vehicula ut eget mi. Ut molestie purus a massa tincidunt, ac interdum justo ultricies.
-                </p>
-                <p>
-                    Vivamus suscipit gravida nisi a blandit. Maecenas facilisis dolor in eros hendrerit, vel dapibus odio pellentesque. Donec hendrerit ligula nec viverra ultrices. Nunc sit amet imperdiet nisi, id consequat eros. Curabitur quis magna non ligula iaculis porttitor fringilla et felis. Sed accumsan nisi vel sodales sagittis. Sed porta enim lorem, nec sagittis dui pharetra at. Nunc faucibus nunc nec tellus consequat, in mollis neque feugiat. Duis rutrum fermentum tristique. Donec non lobortis leo, lacinia tristique tortor. Etiam semper eros lobortis blandit auctor. Sed sit amet vulputate metus, non ornare felis. Suspendisse potenti. Nulla sodales fringilla erat, eu tincidunt magna vehicula sit amet. Curabitur condimentum eleifend velit, at iaculis risus porta et. Morbi elementum mattis eros faucibus pretium.
-                </p>
-                <p>
-                    Vestibulum vel lacinia sapien. Fusce id tellus ex. Maecenas vel blandit velit, a egestas nisl. Fusce bibendum ligula non nulla tincidunt laoreet. Suspendisse congue leo eget risus congue tincidunt ut varius nunc. Ut consectetur auctor metus ac aliquet. Aliquam posuere felis a ante gravida efficitur. Mauris accumsan a urna et laoreet.
-                </p>
-                <p>
-                    Morbi at ante mi. Fusce lacinia nisi urna, ut facilisis arcu commodo id. Quisque ullamcorper, turpis id vestibulum sodales, diam felis facilisis sem, ac dignissim metus nisi et elit. Donec interdum id dui id tristique. Vestibulum et congue neque. Sed a efficitur sem, non mattis mi. Fusce porta elit in dignissim ultricies. Praesent sit amet ex nunc. Ut faucibus aliquet felis, in iaculis ligula placerat vestibulum. Sed hendrerit enim eu nisl ullamcorper molestie. Donec tincidunt, elit id commodo auctor, ante neque sagittis sem, sollicitudin pharetra tellus ex vitae turpis. Aliquam pulvinar egestas nisl, non ultricies ex scelerisque non. Vivamus mattis metus vel venenatis ornare. Fusce turpis magna, aliquam nec neque eget, volutpat tincidunt ipsum. Quisque malesuada, nulla in porta aliquam, ante ipsum cursus massa, vitae pharetra libero turpis a lorem.
-                </p>
-                <p>
-                    Sed pellentesque facilisis orci, id sollicitudin ex accumsan vitae. Nulla facilisi. Aliquam fringilla sem ac laoreet hendrerit. Maecenas dignissim lorem ut dui rhoncus feugiat et sit amet enim. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer sagittis, odio sagittis luctus congue, diam ante sodales massa, non lacinia neque velit quis metus. Fusce auctor enim vitae arcu sagittis suscipit
-                </p>
-            </article>
+            <div id="right" class="contentCont">
+                <article>
+                    <p>
+
+                        Nullam pharetra, felis sit amet suscipit commodo, purus sem auctor metus, eu molestie mi risus varius odio. Quisque eget lacinia sem. Proin nec sollicitudin odio. Proin eget euismod eros. Maecenas vestibulum, turpis nec mattis pellentesque, massa elit aliquam libero, nec luctus mi elit vitae nisi. Nunc posuere gravida ex quis vehicula. Aenean aliquam, ipsum ut cursus porta, leo ipsum scelerisque mauris, in hendrerit mauris eros sed nunc. Duis ex purus, tristique nec est ac, aliquam porta dui.
+                    </p>
+                    <p>
+                        Aenean eu blandit leo, non posuere ante. Sed aliquet non enim a tempor. Vivamus vitae leo ac neque aliquet interdum. Aenean vitae felis tempus, consequat mauris at, placerat nibh. Duis at euismod est. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed rutrum vel felis eu iaculis. Quisque accumsan sagittis turpis, eu fermentum lectus consequat ut. Proin suscipit egestas sem ac aliquam.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dignissim rhoncus orci, sit amet mollis dui. Suspendisse viverra arcu vel quam aliquam consectetur. Phasellus placerat libero nulla, et sagittis felis tristique id. Sed pulvinar quam eu ligula tempus viverra. Nam ac aliquam mauris. Maecenas nunc dui, interdum vel fermentum non, posuere vestibulum dui. Cras orci nunc, iaculis quis vulputate in, suscipit vel nulla. Duis vitae quam vitae augue dignissim vehicula ut eget mi. Ut molestie purus a massa tincidunt, ac interdum justo ultricies.
+                    </p>
+                    <p>
+                        Vivamus suscipit gravida nisi a blandit. Maecenas facilisis dolor in eros hendrerit, vel dapibus odio pellentesque. Donec hendrerit ligula nec viverra ultrices. Nunc sit amet imperdiet nisi, id consequat eros. Curabitur quis magna non ligula iaculis porttitor fringilla et felis. Sed accumsan nisi vel sodales sagittis. Sed porta enim lorem, nec sagittis dui pharetra at. Nunc faucibus nunc nec tellus consequat, in mollis neque feugiat. Duis rutrum fermentum tristique. Donec non lobortis leo, lacinia tristique tortor. Etiam semper eros lobortis blandit auctor. Sed sit amet vulputate metus, non ornare felis. Suspendisse potenti. Nulla sodales fringilla erat, eu tincidunt magna vehicula sit amet. Curabitur condimentum eleifend velit, at iaculis risus porta et. Morbi elementum mattis eros faucibus pretium.
+                    </p>
+                    <p>
+                        Vestibulum vel lacinia sapien. Fusce id tellus ex. Maecenas vel blandit velit, a egestas nisl. Fusce bibendum ligula non nulla tincidunt laoreet. Suspendisse congue leo eget risus congue tincidunt ut varius nunc. Ut consectetur auctor metus ac aliquet. Aliquam posuere felis a ante gravida efficitur. Mauris accumsan a urna et laoreet.
+                    </p>
+                    <p>
+                        Morbi at ante mi. Fusce lacinia nisi urna, ut facilisis arcu commodo id. Quisque ullamcorper, turpis id vestibulum sodales, diam felis facilisis sem, ac dignissim metus nisi et elit. Donec interdum id dui id tristique. Vestibulum et congue neque. Sed a efficitur sem, non mattis mi. Fusce porta elit in dignissim ultricies. Praesent sit amet ex nunc. Ut faucibus aliquet felis, in iaculis ligula placerat vestibulum. Sed hendrerit enim eu nisl ullamcorper molestie. Donec tincidunt, elit id commodo auctor, ante neque sagittis sem, sollicitudin pharetra tellus ex vitae turpis. Aliquam pulvinar egestas nisl, non ultricies ex scelerisque non. Vivamus mattis metus vel venenatis ornare. Fusce turpis magna, aliquam nec neque eget, volutpat tincidunt ipsum. Quisque malesuada, nulla in porta aliquam, ante ipsum cursus massa, vitae pharetra libero turpis a lorem.
+                    </p>
+                    <p>
+                        Sed pellentesque facilisis orci, id sollicitudin ex accumsan vitae. Nulla facilisi. Aliquam fringilla sem ac laoreet hendrerit. Maecenas dignissim lorem ut dui rhoncus feugiat et sit amet enim. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer sagittis, odio sagittis luctus congue, diam ante sodales massa, non lacinia neque velit quis metus. Fusce auctor enim vitae arcu sagittis suscipit
+                    </p>
+                </article>
+            </div>
         </div>
         <div class="Footer">
             <p>Robin Ljungqvist  | &copy;2016</p>
