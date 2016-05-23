@@ -6,103 +6,87 @@
     <meta name="author" content="Robin Ljungqvist" />
     <meta name="description" content="A laboration about responsive CSS and css in general." />
     <meta name="keywords" content="CSS, Laboration, Cool stuff" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
         html, body {
             margin: 0;
             padding: 0;
+            background-color: #cfc0a1;
             clear: both;
         }
 
         .wrapper {
             max-width: 960px;
-            width:96%;
+            width: 100%;
             min-height: 100%;
             margin-top: 0;
             margin-left: auto;
             margin-right: auto;
-            background-color: #cfc0a1;
+            background-color: #493f2b;
         }
 
         .header {
-            display:block;
-            font-family:Arial;
-            background-color: #493f2b;
-            width:100%;
+            position:fixed;
+            font-family: Arial;
+            background-color: #808080;
+            width: 100%;
+            max-width:960px;
             height: auto;
-            padding: 10px;
-            border-bottom-left-radius: 3px;
-            border-bottom-right-radius: 3px;
-
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
         }
 
-        h1 {
-            float:left;
-            width: auto;
-            height: auto;
+        .header h1 {
+            float: left;
             color: #ffffff;
             line-height: 1;
             margin-top: 0 auto;
-            margin-left: 0 auto;
+            margin-left: 20px;
             text-shadow: 5px 5px 5px #1b1a1a;
         }
 
-            h1 span {
-                -moz-transition: 0.5s ease-in-out;
-                -o-transition: 0.5s ease-in-out;
-                -webkit-transition: 0.5s ease-in-out;
-                transition: 0.5s ease-in-out;
+        .header nav {
+            text-align: center;
+            width: 70%;
+            float: right;
+            background-color: #2b2525;
+        }
+
+            .header nav ul {
+                margin-left: 7%;
+                list-style: none;
+                padding: 0;
             }
 
-            h1:hover span {
-                color: yellow;
-                -moz-transform: rotateX(360deg);
-                -ms-transform: rotateX(360deg);
-                -o-transform: rotateX(360deg);
-                -webkit-transform: rotateX(360deg);
-                transform: rotateX(360deg);
+            .header nav li a:link, nav li a:visited {
+                text-decoration: none;
+                float: left;
+                color: #ffffff;
+                padding: 10px;
+                display: block;
             }
 
-            nav{
-                padding-top: 2%;
-                padding-right: 2%;
-                display:inline;
-                float:right;
-            }
-            nav ul {
-                margin: 0 auto;
-                list-style:none;
-                float:left;
-            }
-            li{
-                float:left;
-                margin-left: 10px;
-                display:inline;
-            }
-            nav li a:link, nav li a:visited{
-                text-decoration:none;
-                float:left;
-                font-size: 18px;
-                color:#ffffff;
-                margin-bottom: 3%;
-                display:inline-block
-            }
         .contentCont {
+            float: left;
+            background-color: #cfc0a1;
             border: 1px solid black;
             border-radius: 10px;
             max-width: 440px;
             min-width: 440px;
             margin: 10px;
+            margin-top: 10%;
             padding: 8px;
             box-shadow: rgba(23, 22, 22, 0.52) 5px 5px;
-            float:left;
         }
-        article p{
+
+        article p {
             font-size: 16px;
         }
-        article p::first-letter{
-            font-size: 18px;
-            font-weight:bolder;
-        }
+
+            article p::first-letter {
+                font-size: 18px;
+                font-weight: bold;
+            }
 
         .Footer {
             background-color: #493f2b;
@@ -113,14 +97,13 @@
             margin-top: -30px; /* negative value of footer height */
             height: 30px;
             clear: both;
+            text-align: right;
+            padding-right: 1%;
         }
 
-            .Footer p {
-                float: right;
-                margin-top: 5px;
-                margin-right: 10px;
-                margin-bottom: 0;
-            }
+        #whatviewport:before {
+            content: "Hello Computer Screen";
+        }
     </style>
 </head>
 <body>
@@ -139,19 +122,10 @@
             </nav>
 
         </div>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Chapter 10-12</a></li>
-                <li><a href="#">Responsive site</a></li>
-                <li><a href="#">Mobile first</a></li>
-                <li><a href="#">Post it</a></li>
-                <li><a href="#">Iphone</a></li>
-            </ul>
-        </nav>
         <div class="Content">
             <div id="left" class="contentCont">
                 <article>
+                    <h2 id="whatviewport"></h2>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et rutrum libero. Ut venenatis vestibulum rhoncus. Sed interdum in mi in ultricies. Nullam dictum nisi at scelerisque egestas. Donec ultricies ligula ut libero rutrum, ac egestas metus vehicula. Duis vestibulum nibh et lectus pretium rutrum. Nulla nec dolor vel mauris venenatis ullamcorper nec a purus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin non eros at eros auctor convallis sit amet nec massa. Aenean ut dignissim ante. Nullam sit amet sapien ut lectus tincidunt tempor. Nam laoreet enim orci, et consequat sem interdum vitae. Integer eu luctus nisl. Fusce sodales odio a venenatis ultrices.
                     </p>
