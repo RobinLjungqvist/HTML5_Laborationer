@@ -7,7 +7,10 @@
     <meta name="description" content="A laboration about responsive CSS and css in general." />
     <meta name="keywords" content="CSS, Laboration, Cool stuff" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <style>
+    <link href="../styles/defaultstyle.css" rel="stylesheet" type="text/css" />
+    <!-- Lifted out style
+
+        <style>
         html, body {
             margin: 0;
             padding: 0;
@@ -31,8 +34,7 @@
             background-color: #808080;
             width: 100%;
             max-width: 960px;
-            min-width: 240px;
-            height: auto;
+            height: 90px;
             border-bottom-left-radius: 5px;
             border-bottom-right-radius: 5px;
             padding: 0;
@@ -40,11 +42,10 @@
         }
 
             .header h1 {
-                float: left;
                 color: #ffffff;
                 line-height: 1;
+                text-align: center;
                 margin-top: 0 auto;
-                margin-left: 10%;
                 padding: 0;
                 text-shadow: 5px 5px 5px #1b1a1a;
             }
@@ -54,6 +55,7 @@
                 text-align: center;
                 width: 100%;
                 margin: 0 auto;
+                padding:0;
                 background-color: #2b2525;
                 border-radius: 5px;
                 clear: both;
@@ -62,22 +64,33 @@
                 .header nav ul {
                     list-style: none;
                     padding: 0;
+                    display:inline;
                 }
 
                 .header nav li {
-                    display: inline-block;
-                    min-width: 140px;
-                    margin: 5px auto;
+                    float:left;
+                    padding: 0;
+                    width:20%;
+                    display:block;
                 }
 
                     .header nav li a:link, nav li a:visited {
+
+                        height:100%;
+                        width:100%;
                         text-decoration: none;
                         color: #ffffff;
-                        display: inline-block;
+                        display: block;
+                    }
+                    .header nav li a:hover{
+                        background-color: #9a9a9a;
+                    }
+                    .header nav li a:active{
+                        background-color: #ae7247;
                     }
 
         .content {
-            margin-top: 6%;
+            margin-top: 110px;
             float: left;
         }
 
@@ -86,10 +99,9 @@
             background-color: #cfc0a1;
             border: 1px solid black;
             border-radius: 10px;
-            width: 46%;
+            width: 45%;
             margin: auto 1%;
-            margin-top: 10%;
-            padding: 8px;
+            padding: 1%;
             box-shadow: rgba(23, 22, 22, 0.52) 5px 5px;
         }
 
@@ -116,11 +128,12 @@
             margin: 0 auto;
             padding: 1%;
         }
+        .clearfix {}
 
         #whatviewport:before {
             content: "Hello Computer Screen";
         }
-    </style>
+    </style>-->
 </head>
 <body>
     <div class="wrapper">
@@ -129,8 +142,7 @@
             <nav>
                 <ul>
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">Chapter 10-12</a></li>
-                    <li><a href="#">Responsive site</a></li>
+                    <li><a href="#">About CSS</a></li>
                     <li><a href="#">Mobile first</a></li>
                     <li><a href="#">Post it</a></li>
                     <li><a href="#">Iphone</a></li>
