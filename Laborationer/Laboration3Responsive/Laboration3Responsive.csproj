@@ -106,9 +106,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="images\flygplan1.PNG" />
-    <Content Include="images\flygplan2.PNG" />
-    <Content Include="images\flygplan3.PNG" />
+    <Content Include="lab3images\flygplan1.PNG" />
+    <Content Include="lab3images\flygplan2.PNG" />
+    <Content Include="lab3images\flygplan3.PNG" />
     <Content Include="scripts\ai.0.15.0-build58334.js" />
     <Content Include="scripts\ai.0.15.0-build58334.min.js" />
     <Content Include="styles\defaultstyle.css" />
