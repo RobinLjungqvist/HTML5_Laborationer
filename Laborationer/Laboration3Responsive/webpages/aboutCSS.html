@@ -7,7 +7,7 @@
     <meta name="description" content="A laboration about responsive CSS and css in general." />
     <meta name="keywords" content="CSS, Laboration, Cool stuff" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="../styles/defaultstyle.css" rel="stylesheet" type="text/css" />
+    <link href="../styles/chapters.css" rel="stylesheet" type="text/css" />
     <!-- Lifted out style
 
         <style>
@@ -152,24 +152,114 @@
         <div class="content">
             <div id="left" class="contentCont">
                 <article>
-                    <div id="whatviewport"></div>
-                    <h2> Rubrik</h2>
+                    <h2>Colors</h2>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et rutrum libero. Ut venenatis vestibulum rhoncus. Sed interdum in mi in ultricies. Nullam dictum nisi at scelerisque egestas. Donec ultricies ligula ut libero rutrum, ac egestas metus vehicula. Duis vestibulum nibh et lectus pretium rutrum. Nulla nec dolor vel mauris venenatis ullamcorper nec a purus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin non eros at eros auctor convallis sit amet nec massa. Aenean ut dignissim ante. Nullam sit amet sapien ut lectus tincidunt tempor. Nam laoreet enim orci, et consequat sem interdum vitae. Integer eu luctus nisl. Fusce sodales odio a venenatis ultrices.
+                        The CSS attribute color defines the textcolor of that element. It can be defined as RGBA, HEX, HSLA and predefined names.
+                    </p>
+                    <h3>The different colors</h3>
+                    <p>
+                        I will write the word color 4 times with the different color definition values and different background colors.
+                        They are defined by writing color: (type) where type can be rgb, hex or hsl or the predefined name of a color. ex. hotpink.
+
+                        <ul>
+                            <li>Rgb: <div id="rgba">Color</div></li>
+                            <li>Hex: <div id="hex">Color</div></li>
+                            <li>Predefined: <div id="predef">Color</div></li>
+                            <li>Hsl: <div id="hsla">Color</div></li>
+
+                        </ul>
+                    </p>
+                    <h3>More on HSLA</h3>
+                    <p>
+                        It is similar to RGBa in that you declare three values determining the color and then a fourth value for its transparency level. You can read more about browser support below, but it's basically any browser that supports rgba supports hsla too.
+
+
+                        <ul>
+                            <li>Hue - Think of a color wheel. Around 0o and 360o are reds 120o are greens, 240o are blues. Use anything in between 0-360. Values above and below will be modulus 360.</li>
+
+                            <li>
+                                Saturation - 0% is completely denatured (grayscale). 100% is fully saturated (full color).
+                            </li>
+
+                            <li>
+                                Lightness - 0% is completely dark (black). 100% is completely light (white). 50% is average lightness.
+                            </li>
+                            <li>
+                                Alpha - Opacity/Transparency value. 0 is fully transparent. 1 is fully opaque. 0.5 is 50% transparent.
+                            </li>
+                        </ul>
+                    </p>
+                    <h3>Contrast</h3>
+                    <p>
+                        Contrast are the concept of having a certain color on a different background. Which can make the contrast low, high or medium.
+                        Text is harder to read when the contrast is low. High contrast makes the text easier to read but too much can also make the text hard to read.
+                        That's why you should do as the swedes, take the middle route. Go medium!
                     </p>
                     <p>
-                        Maecenas justo purus, molestie eu purus at, rhoncus vestibulum augue. Vestibulum lacinia lorem non tellus eleifend accumsan. Quisque eleifend nibh eu ornare gravida. Donec dapibus erat in ex commodo tincidunt. Aliquam non urna vel arcu scelerisque rhoncus non ac dui. Nullam cursus risus eu quam porta, faucibus finibus velit aliquam. Nulla facilisi. Nunc iaculis elit vel eleifend gravida.
+                        Example:
+                        <ul>
+                            <li><div id="conth">High</div></li>
+                            <li><div id="contl">Low</div></li>
+                            <li><div id="contm">Medium</div></li>
+                        </ul>
+                        If the text is reversed a light color on a dark background increase the height between lines and the weight of the font to make it more readable.
+                    </p>
+                    <h3>Opacity</h3>
+                    <p>
+                        Colors have the ability to be more or less see-through which can come in handy. This is called Opacity or alpha.
+                        Some colors value definitions have this built in but you can also specify it on its own with the keyword opacity with a value between 0.0 and 1.0.
+                    </p>
+                    <p>
+                        Example:
+                        <div id="square1"></div>
+                        <div id="square2"></div>
                     </p>
                 </article>
             </div>
 
             <div id="right" class="contentCont">
                 <article>
-                    <h2>Rubrik</h2>
+                    <h2>Text</h2>
+
+                    <h3>Typeface</h3>
                     <p>
-                        Nullam pharetra, felis sit amet suscipit commodo, purus sem auctor metus, eu molestie mi risus varius odio. Quisque eget lacinia sem. Proin nec sollicitudin odio. Proin eget euismod eros. Maecenas vestibulum, turpis nec mattis pellentesque, massa elit aliquam libero, nec luctus mi elit vitae nisi. Nunc posuere gravida ex quis vehicula. Aenean aliquam, ipsum ut cursus porta, leo ipsum scelerisque mauris, in hendrerit mauris eros sed nunc. Duis ex purus, tristique nec est ac, aliquam porta dui.
+                        There are a few diffrent font types which are called serif, sans-serif and monospace.
+                        Serif have extra details where as sans-serif has none. monospace means that every letter has a fixed width.
                     </p>
-                    
+                    <h3>Type styles</h3>
+                    <p>
+                        There are three typical styles that you can format your font with. These are Weight, style and stretch.
+                        They are implemented by typing the keyword followed by the value. font-weight:(light, medium, bold..) font-style: (normal, italic oblique) or font-stretch: (condensed, extended)
+                        Below in the example i will write serif as bold, sans-serif as italic and monospace as condensed.
+
+                    </p>
+                    <p>
+                        Example
+                        <ol>
+                            <li>Serif:<div id="serif">Georgia</div></li>
+                            <li>Sans-serif:<div id="sans-serif">Verdana</div></li>
+                            <li>Monospace:<div id="monospace">Courier</div></li>
+                        </ol>
+                    </p>
+                    <div id="textexample">
+                        <p> You can also text-align the text to the center. And also define the letter-spacing and word-spacing of text.</p>
+                    </div>
+                    <p id="vertalignindent">You can indent your text with text-indent keyword follow by how many pixels or %. Here i've done it 50 pixels. </p>
+                    <h3>@font-face</h3>
+                    <p>
+                        The @fontface keyword lets you use a font that isn't installed on your computer by getting it from an url!
+                    </p>
+                    <p>
+                        Example:
+                        @font-face{
+                        font-family: 'MyOwnFont';
+                        src: url('fonts/MyOwnFont.eot');
+                        }
+                    </p>
+                    <h3>More stuff</h3>
+                    <p>
+                        You can also make the text drop shadow as i've done in the header of this page. You can also style links to not be blue text with underline textdecorations. This i have also done on this page.
+                    </p>
                 </article>
             </div>
         </div>

@@ -1,0 +1,103 @@
+﻿
+@import 'defaultstyle.css';
+
+body {
+}
+
+#rgba {
+    margin-left: 42px;
+    display: inline;
+    color: rgb(255, 216, 0);
+    background-color: rgb(0, 0, 0);
+}
+
+#hsla {
+    margin-left: 47px;
+    display: inline;
+    color: hsl(77, 100%, 50%);
+    background-color: hsl(0, 0%, 50%);
+}
+
+#predef {
+    display: inline;
+    color: hotpink;
+    background-color: white;
+}
+
+#hex {
+    margin-left: 42px;
+    display: inline;
+    color: #ff6a00;
+    background-color: #b200ff;
+}
+
+#conth {
+    text-align:center;
+    background-color: black;
+    color: white;
+    display: inline-block;
+    width: 70px;
+    height: 30px;
+}
+
+#contl {
+    text-align:center;
+    background-color: #a9a9a9;
+    color: white;
+    display: inline-block;
+    width: 70px;
+    height: 30px;
+}
+
+#contm {
+    text-align:center;
+    background-color: hsl(0, 0%, 50%);
+    color: white;
+    display: inline-block;
+    width: 70px;
+    height: 30px;
+}
+#square1{
+    background-color: orangered;
+    width: 100px;
+    height: 100px;
+}
+#square2{
+    position: relative;
+    top: -30px;
+    left: 50px;
+    background-color:blue;
+    width:100px;
+    height: 100px;
+    opacity: 0.6;
+}
+ul li{
+    line-height: 1,5;
+}
+ul{
+    list-style: none;
+}
+#serif{
+    font-family: Georgia;
+    font-weight: bold;
+}
+#sans-serif{
+    font-family: Verdana;
+    font-style: italic;
+
+
+}
+#monospace{
+    font-family: Courier;
+    font-stretch: condensed;
+
+}
+#textexample{
+    text-align:center;
+    letter-spacing: 0.3em;
+    word-spacing: 0,2em;
+}
+#vertalignindent {
+    text-indent: 50px;
+    vertical-align: text-bottom;
+}
