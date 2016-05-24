@@ -76,10 +76,10 @@ footer {
     height: 100px;
     background-color: #d9d988;
     box-shadow: rgba(23, 20, 20, 0.4) 10px 10px;
-    -moz-transition: 0.5s ease-in-out;
-    -o-transition: 0.5s ease-in-out;
-    -webkit-transition: 0.5s ease-in-out;
-    transition: 0.5s ease-in-out;
+    -moz-transition: 0.2s ease-in-out;
+    -o-transition: 0.2s ease-in-out;
+    -webkit-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
 }
 
     .postit h3 {
@@ -96,10 +96,10 @@ footer {
     width: 250px;
     display: block;
     opacity: 0;
-    -moz-transition: opacity ease-in 0.5s;
-    -o-transition: opacity ease-in 0.5s;
-    -webkit-transition: opacity ease-in 0.5s;
-    transition: opacity ease-in 0.5s;
+    -moz-transition: opacity ease-in 1.5s;
+    -o-transition: opacity ease-in 1.5s;
+    -webkit-transition: opacity ease-in 1.5s;
+    transition: opacity ease-in 1.5s;
     transition: opacity ease-out 0.1s;
 }
 .postit:hover{
