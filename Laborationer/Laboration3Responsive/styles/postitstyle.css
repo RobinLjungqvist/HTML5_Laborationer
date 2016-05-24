@@ -1,0 +1,67 @@
+﻿@font-face {
+    font-family: 'whatever it takes.ttf';
+    src: url('../fonts/whatever it takes.ttf');
+}
+body{
+    padding: 100px;
+}
+#impo {
+    -moz-transform: rotateZ(-8deg);
+    -ms-transform: rotateZ(-8deg);
+    -o-transform: rotateZ(-8deg);
+    -webkit-transform: rotateZ(-8deg);
+    transform: rotateZ(-8deg);
+    left: 150px;
+}
+#rem{
+    -moz-transform: rotateZ(5deg);
+    -ms-transform: rotateZ(5deg);
+    -o-transform: rotateZ(5deg);
+    -webkit-transform: rotateZ(5deg);
+    transform: rotateZ(5deg);
+    left: 200px;
+
+}
+#note {
+    -moz-transform: rotateZ(-2deg);
+    -ms-transform: rotateZ(-2deg);
+    -o-transform: rotateZ(-2deg);
+    -webkit-transform: rotateZ(-2deg);
+    transform: rotateZ(-2deg);
+    left: 170px;
+
+}
+footer{
+    position:fixed;
+    top: 600px;
+    left: 100px;
+}
+.postit {
+    position: relative;
+    font-family: 'whatever it takes.ttf';
+    width: 200px;
+    height: 100px;
+    background-color: #d9d988;
+    box-shadow: rgba(23, 20, 20, 0.4) 10px 10px;
+    -moz-transition: 1s ease-in-out;
+    -o-transition: 1s ease-in-out;
+    -webkit-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+}
+.postit p{
+    text-align: center;
+    font-size: 3em;
+    margin: 5px;
+    padding: 10px;
+}
+    .postit:hover {
+        width: 250px;
+        height: 200px;
+        background-color: #ffd800;
+        opacity:1;
+    }
+.hidden{
+    font-size: 0.4em;
+    opacity:0;
+    transition: 0.3s ease-in-out;
+}

@@ -98,6 +98,9 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="styles\postitstyle.css" />
+    <Content Include="webpages\postit.html" />
+    <Content Include="fonts\whatever it takes.ttf" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
