@@ -2,9 +2,11 @@
     font-family: 'whatever it takes.ttf';
     src: url('../fonts/whatever it takes.ttf');
 }
-body{
-    padding: 100px;
+
+body {
+    padding: 50px;
 }
+
 #impo {
     -moz-transform: rotateZ(-8deg);
     -ms-transform: rotateZ(-8deg);
@@ -13,15 +15,16 @@ body{
     transform: rotateZ(-8deg);
     left: 150px;
 }
-#rem{
+
+#rem {
     -moz-transform: rotateZ(5deg);
     -ms-transform: rotateZ(5deg);
     -o-transform: rotateZ(5deg);
     -webkit-transform: rotateZ(5deg);
     transform: rotateZ(5deg);
     left: 200px;
-
 }
+
 #note {
     -moz-transform: rotateZ(-2deg);
     -ms-transform: rotateZ(-2deg);
@@ -29,39 +32,82 @@ body{
     -webkit-transform: rotateZ(-2deg);
     transform: rotateZ(-2deg);
     left: 170px;
-
 }
-footer{
-    position:fixed;
+
+    #note:hover {
+        -moz-transform: rotateZ(-10deg);
+        -ms-transform: rotateZ(-10deg);
+        -o-transform: rotateZ(-10deg);
+        -webkit-transform: rotateZ(-10deg);
+        transform: rotateZ(-10deg);
+        left: 50px;
+        z-index: 10;
+    }
+    #rem:hover {
+        -moz-transform: rotateZ(10deg);
+        -ms-transform: rotateZ(10deg);
+        -o-transform: rotateZ(10deg);
+        -webkit-transform: rotateZ(10deg);
+        transform: rotateZ(10deg);
+        left: 250px;
+        z-index: 9;
+    }
+    #impo:hover {
+        -moz-transform: rotateZ(-3deg);
+        -ms-transform: rotateZ(-3deg);
+        -o-transform: rotateZ(-3deg);
+        -webkit-transform: rotateZ(-3deg);
+        transform: rotateZ(-3deg);
+        left: 50px;
+        z-index: 11;
+    }
+
+footer {
+    position: fixed;
     top: 600px;
     left: 100px;
 }
+
 .postit {
+    padding: 10px;
     position: relative;
     font-family: 'whatever it takes.ttf';
     width: 200px;
     height: 100px;
     background-color: #d9d988;
     box-shadow: rgba(23, 20, 20, 0.4) 10px 10px;
-    -moz-transition: 1s ease-in-out;
-    -o-transition: 1s ease-in-out;
-    -webkit-transition: 1s ease-in-out;
-    transition: 1s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    -webkit-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
 }
-.postit p{
-    text-align: center;
-    font-size: 3em;
-    margin: 5px;
-    padding: 10px;
-}
-    .postit:hover {
-        width: 250px;
-        height: 200px;
-        background-color: #ffd800;
-        opacity:1;
+
+    .postit h3 {
+        text-align: center;
+        font-size: 3em;
+        margin: 5px auto;
     }
-.hidden{
-    font-size: 0.4em;
-    opacity:0;
-    transition: 0.3s ease-in-out;
+
+.hidden {
+    text-align: center;
+    margin: 5px auto;
+    font-size: 2em;
+    height: 100px;
+    width: 250px;
+    display: block;
+    opacity: 0;
+    -moz-transition: opacity ease-in 0.5s;
+    -o-transition: opacity ease-in 0.5s;
+    -webkit-transition: opacity ease-in 0.5s;
+    transition: opacity ease-in 0.5s;
+    transition: opacity ease-out 0.1s;
+}
+.postit:hover{
+    width: 250px;
+    height: 260px;
+    background-color: #ffd800;
+    overflow:hidden;
+}
+.postit:hover .hidden {
+    opacity: 1;
 }
