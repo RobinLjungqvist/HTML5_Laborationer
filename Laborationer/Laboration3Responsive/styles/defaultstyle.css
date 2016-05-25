@@ -142,6 +142,10 @@ img {
     height: auto;
     margin: 5px auto;
 }
+.menu, .menu a{
+   display: none !important;
+}
+
 /* --- Tablet ---*/
 @media only screen and (max-width: 768px) {
     .header {
@@ -163,6 +167,7 @@ img {
     }
 
     #whatviewport:before {
+        font-family: Verdana;
         content: "Hello Tablet Screen";
     }
 }
@@ -188,7 +193,7 @@ img {
                 }
 
     .content {
-        margin-top: 180px;
+        margin-top: 120px;
     }
 
     .contentCont {
@@ -206,8 +211,34 @@ img {
     }
 
     #whatviewport:before {
+        font-family: 'Courier New';
+        font-weight: bolder;
         content: "Hello Mobile Screen";
     }
+    .listitem{
+        display:none !important;
+    }
+    .listitem a{
+        line-height: 2;
+        display:none !important;
+    }
+    .menu, .menu a{
+        line-height: 2;
+        margin-left: auto;
+        margin-right: auto;
+        display:block !important;
+    }
+     .menu:active ~ .listitem, .listitem a {
+         display: block !important;
+
+
+    }
+       nav:hover .listitem{
+         display:block !important;
+     }
+
+
+
 }
 /* --- Print ---*/
 @media print {
