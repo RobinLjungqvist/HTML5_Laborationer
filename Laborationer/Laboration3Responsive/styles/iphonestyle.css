@@ -1,0 +1,197 @@
+﻿body {
+    background-color: #808080;
+}
+
+.iphone {
+    height: 467px;
+    width: 220px;
+    background-color: white;
+    border: 3px solid #bdbaba;
+    margin: 50px auto;
+    border-radius: 30px 30px 30px 30px;
+    box-shadow: rgba(0, 0, 0, 0.59) 10px 10px;
+}
+
+.display {
+    height: 329.5px;
+    width: 185.6px;
+    border: 2px solid #232323;
+    margin: 0 auto 50px auto;
+    border-radius: 3px;
+    background: url('../lab3images/mobile wallpaper free.jpg');
+    background-size: 185.6px 329.5px;
+    background-repeat: no-repeat;
+}
+
+.nav {
+    width: 185.6px;
+    height: 50px;
+    background-color: rgba(138, 129, 129, 0.90);
+}
+
+.homebutton {
+    background-color: white;
+    border: 2px solid #808080;
+    height: 40px;
+    width: 40px;
+    margin: 15px auto;
+    border-radius: 50%;
+}
+
+.topcontainer {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 50px;
+}
+
+#topcircle {
+    background-color: black;
+    border-radius: 50%;
+    height: 12px;
+    width: 12px;
+    margin: 5px auto;
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+#speakercontainer {
+    padding-left: 80px;
+}
+
+#leftcircle {
+    display: inline-block;
+    background-color: black;
+    border-radius: 50%;
+    height: 6px;
+    width: 6px;
+    margin: 5px auto;
+}
+
+#speaker {
+    display: inline-block;
+    background-color: black;
+    border-radius: 3px;
+    height: 6px;
+    width: 45px;
+    margin: 5px auto;
+    margin-left: 5px;
+    margin-top: 15px;
+}
+
+.iconcontainer {
+    float:left;
+    width: 46.4px;
+    height: 44px;
+    margin: 2px auto;
+    color:white;
+    font-family:'Courier New';
+    line-height: 1;
+    font-size: 0.5em;
+    text-align: center;
+    letter-spacing: 0.7px;
+}
+.icon{
+    width: 30px;
+    height: 30px;
+    margin: 2px auto;
+    border-radius: 6px;
+}
+.screen{
+    width: 185.6px;
+    height: 269.5px;
+
+}
+.topmenu{
+    width: 100%;
+    height: 10px;
+    padding: 0;
+    margin: 0;
+
+}
+.topmenuitem{
+    font-family:'Courier New';
+    color:white;
+    float:left;
+    width: 61.86px;
+    height: 10px;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.90);
+    margin: 0 auto;
+    font-size:8px;
+}
+#time{
+    text-align:center
+}
+#battery{
+    text-align:right;
+}
+#power{
+    font-size:12px;
+    line-height: 0.4;
+    letter-spacing: -1.5px;
+}
+#phone{
+    background-color: #43ae37;
+    background-image: linear-gradient( #24821a, #43ae37);
+    font-size: 3em;
+    line-height: 1.3;
+}
+#mail{
+    background-color: #1bb6f1;
+    background-image: linear-gradient( #1bb6f1, #004c69);
+    font-size: 3em;
+    line-height: 1.3;
+}
+#safari{
+    background-color: white;
+    font-size: 3em;
+    line-height: 1.3;
+}
+#safaricircle{
+    float:left;
+    height:27px;
+    width:27px;
+    background-color: #1384b0;
+    background-image: radial-gradient( #1bb6f1, #004c69);
+    border-radius:50%;
+    margin: 1.5px;
+}
+#music{
+    background-color: #fa3519;
+    background-image: linear-gradient( #fa3519, #9c1604);
+    font-size: 3em;
+    line-height: 1.3;
+}
+#message{
+    background-color: #43ae37;
+    background-image: linear-gradient( #24821a, #43ae37);
+    font-size: 3em;
+    line-height: 1.3;
+}
+#calendar{
+    background-color: white;
+    background-image: linear-gradient( white, #808080);
+    font-size: 2.7em;
+    font-weight:bold;
+    line-height: 1;
+}
+#calendarnumber{
+    margin: 0 auto;
+}
+p{
+    color:red;
+    font-size:5px;
+    line-height:1;
+    padding-top:4px;
+    margin: 0 auto;
+    letter-spacing: 0.2px;
+}
+
+
+#placeholder{
+    background-color: #808080;
+    background-image: linear-gradient( #808080, #262626);
+    font-size: 3em;
+    line-height: 1.3;
+}

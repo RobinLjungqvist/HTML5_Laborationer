@@ -94,11 +94,14 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="lab3images\mobile wallpaper free.jpg" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="styles\iphonestyle.css" />
     <Content Include="styles\postitstyle.css" />
+    <Content Include="webpages\iphone.html" />
     <Content Include="webpages\postit.html" />
     <Content Include="fonts\whatever it takes.ttf" />
     <None Include="Web.Debug.config">
