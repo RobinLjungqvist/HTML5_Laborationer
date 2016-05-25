@@ -1,0 +1,21 @@
+<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+ <defs>
+  <linearGradient spreadMethod="pad" y2="1" x2="0" y1="0" x1="1" id="svg_16">
+   <stop offset="0" stop-opacity="0.996094" stop-color="#ff0000"/>
+   <stop offset="0.292969" stop-opacity="0.992188" stop-color="#dd1818"/>
+   <stop offset="0.53125" stop-opacity="0.992188" stop-color="#bc0505"/>
+   <stop offset="0.78125" stop-opacity="0.996094" stop-color="#7f0000"/>
+   <stop offset="1" stop-opacity="0.996094" stop-color="#7f0000"/>
+  </linearGradient>
+ </defs>
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="102" width="102" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <path id="svg_9" d="m-132.249998,-86.979168c3.609167,-15.020832 17.750002,0 0,19.312498c-17.750002,-19.312498 -3.609167,-34.333331 0,-19.312498z" fill-opacity="null" stroke-opacity="null" stroke-width="null" stroke="null" fill="#ff0000"/>
+  <path id="svg_10" d="m49.220415,25.918748c23.341581,-31.531248 77.617065,29.333334 1.666667,55.135415c-74.283732,-26.968748 -25.841581,-86.499996 -1.666667,-55.135415z" stroke-width="null" fill="url(#svg_16)"/>
+ </g>
+</svg>

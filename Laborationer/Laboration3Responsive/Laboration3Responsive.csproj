@@ -94,7 +94,12 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="lab3images\camera.svg" />
+    <Content Include="lab3images\clock.svg" />
+    <Content Include="lab3images\heart.svg" />
     <Content Include="lab3images\mobile wallpaper free.jpg" />
+    <Content Include="lab3images\note.svg" />
+    <Content Include="lab3images\weather.svg" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

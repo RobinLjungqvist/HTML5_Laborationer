@@ -83,7 +83,7 @@
     float:left;
     width: 46.4px;
     height: 44px;
-    margin: 2px auto;
+    margin: 4px auto;
     color:white;
     font-family:'Courier New';
     line-height: 1;
@@ -179,7 +179,7 @@
 #calendarnumber{
     margin: 0 auto;
 }
-p{
+#icontext{
     color:red;
     font-size:5px;
     line-height:1;
@@ -194,4 +194,104 @@ p{
     background-image: linear-gradient( #808080, #262626);
     font-size: 3em;
     line-height: 1.3;
+}
+#camera{
+    background-color: #808080;
+    background-image: linear-gradient( white, #262626);
+}
+
+.bg-svg {
+    width: 100%;
+    background-image: url(../lab3images/camera.svg);
+    background-size: cover;
+    height: 0;
+    padding: 0; /* reset */
+    padding-bottom: 92%;
+}
+#pictures{
+    background-color: #043446;
+    background-image: linear-gradient( #004c69, #046c94);
+    font-size: 3em;
+    line-height: 1.3;
+}
+#weather{
+    background-color: #043446;
+    background-image: linear-gradient( #004c69, #046c94);
+}
+.bg-svgweather{
+    width:100%;
+    background-image: url(../lab3images/weather.svg);
+    background-size: cover;
+    height: 0;
+    padding: 0; /* reset */
+    padding-bottom: 92%;
+}
+#appstore{
+    background-color: #1bb6f1;
+    background-image: linear-gradient( #1bb6f1, #61cef8);
+    font-size: 3em;
+    line-height: 1.3;
+}
+#clock{
+    background-color: black;
+}
+.bg-svgclock{
+    width:100%;
+    background-image: url(../lab3images/clock.svg);
+    background-size: cover;
+    height: 0;
+    padding: 0; /* reset */
+    padding-bottom: 92%;
+}
+#health{
+    background-color:white;
+}
+.bg-svgheart{
+    width:100%;
+    background-image: url(../lab3images/heart.svg);
+    background-size: cover;
+    height: 0;
+    padding: 0; /* reset */
+    padding-bottom: 92%;
+}
+#itunes{
+    background-color: #955cb7;
+    background-image: linear-gradient( #955cb7, #d194f5);
+}
+.bg-svgnote{
+    width:100%;
+    background-image: url(../lab3images/note.svg);
+    background-size: cover;
+    height: 0;
+    padding: 0; /* reset */
+    padding-bottom: 92%;
+}
+#backbutton{
+    width: 200px;
+    height: 50px;
+    background-color: black;
+    border-radius: 25px;
+    margin: 0 auto;
+    padding: 5px;
+    text-decoration:none;
+}
+#backbutton:hover{
+    background-color: #a0a0a0;
+}
+#backbutton:active{
+    background-color: #fa3519;
+}
+a{
+    text-decoration:none;
+}
+#backbutton p{
+    color:white;
+    text-align:center;
+    font-size: 2em;
+    font-family:'Courier New';
+    margin: 10px auto;
+    line-height:1;
+    padding: 0;
+    letter-spacing: 5px;
+    text-decoration:none;
 }
