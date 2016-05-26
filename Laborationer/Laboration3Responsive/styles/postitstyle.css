@@ -4,7 +4,7 @@
 }
 
 body {
-    margin: 50px auto;
+    margin: 30px auto;
 }
 
 #impo {
@@ -13,6 +13,7 @@ body {
     -o-transform: rotateZ(-8deg);
     -webkit-transform: rotateZ(-8deg);
     transform: rotateZ(-8deg);
+    top: 130px;
     left: 150px;
 }
 
@@ -22,6 +23,8 @@ body {
     -o-transform: rotateZ(5deg);
     -webkit-transform: rotateZ(5deg);
     transform: rotateZ(5deg);
+    top: 260px;
+
     left: 200px;
 }
 
@@ -31,6 +34,7 @@ body {
     -o-transform: rotateZ(-2deg);
     -webkit-transform: rotateZ(-2deg);
     transform: rotateZ(-2deg);
+    top: 390px;
     left: 170px;
 }
 
@@ -64,7 +68,7 @@ body {
 
 .postit {
     padding: 10px;
-    position: relative;
+    position: absolute;
     font-family: 'whatever it takes.ttf';
     width: 200px;
     height: 100px;
@@ -105,15 +109,6 @@ body {
 .postit:hover .hidden {
     opacity: 1;
 }
-@media only screen and (max-width: 480px) {
-    .postit{
-        position:relative;
-        left: 20px !important;
-        right:auto !important;
-        top: 20px !important;
-        bottom:auto!important;
-    }
-}
 
 #backbutton{
     position:fixed;
@@ -121,10 +116,11 @@ body {
     height: 50px;
     background-color: black;
     border-radius: 25px;
-    margin: 50px auto;
+    left: 500px;
+    right: auto;
     padding: 5px;
     text-decoration:none;
-    left: 50px;
+    top: 30px;
 }
 #backbutton:hover{
     background-color: #343434;
@@ -145,4 +141,36 @@ a{
     padding: 0;
     letter-spacing: 5px;
     text-decoration:none;
+}
+@media only screen and (max-width: 768px) {
+    .postit{
+        position:relative;
+        left: 40px !important;
+        right:auto !important;
+        top: 0 !important;
+        bottom:auto!important;
+    }
+    #backbutton{
+        left: 50px;
+    }
+}
+@media only screen and (max-width: 900px){
+    #backbutton{
+        margin-left: 300px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .postit{
+        position:relative;
+        left: 40px !important;
+        right:auto !important;
+        top: 20px !important;
+        bottom:auto!important;
+    }
+    #backbutton{
+        margin-left: 35px;
+        top: auto;
+        bottom: 10px;
+    }
 }
