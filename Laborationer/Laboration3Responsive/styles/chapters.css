@@ -72,7 +72,7 @@ body {
     opacity: 0.6;
 }
 ul li{
-    line-height: 1,5;
+    /*line-height: 1,5;*/
 }
 ul{
     list-style: none;
@@ -95,7 +95,7 @@ ul{
 #textexample{
     text-align:center;
     letter-spacing: 0.3em;
-    word-spacing: 0,2em;
+    word-spacing: 5px;
 }
 #vertalignindent {
     text-indent: 50px;
